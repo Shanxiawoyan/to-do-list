@@ -7,12 +7,14 @@ body {
 }
 
 .container {
-  max-width: 400px;
-  margin: 50px auto;
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
   padding: 25px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 h1 {
@@ -62,11 +64,6 @@ li {
   margin-bottom: 10px;
 }
 
-li.completed span {
-  text-decoration: line-through;
-  color: gray;
-}
-
 button {
   background: #eee;
   border: none;
@@ -78,3 +75,25 @@ button {
 button:hover {
   background: #ddd;
 }
+.task-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.task-column {
+  flex: 1;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task-column h3 {
+  text-align: center;
+  color: #1d1b3f;
+  margin-bottom: 10px;
+}
+
